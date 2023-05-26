@@ -279,9 +279,9 @@ function moveWindow(win, sw) {
 	}
 
 	if (ignorePosition) {
-	    let cw = windowData(win);
-	    sw.x = cw.x;
-	    sw.y = cw.y;
+		let cw = windowData(win);
+		sw.x = cw.x;
+		sw.y = cw.y;
 	}
 
 	win.move_resize_frame(false, sw.x, sw.y, sw.width, sw.height);
@@ -292,9 +292,9 @@ function moveWindow(win, sw) {
 	if (sw.maximized) win.maximize(sw.maximized);
 	win.move_resize_frame(false, sw.x, sw.y, sw.width, sw.height);
 
-	if (sw.fullscreen) win.make_fullscreen();
+	// if (sw.fullscreen) win.make_fullscreen();
 
-	if (sw.above) win.make_above();
+	// if (sw.above) win.make_above();
 
 	//if (sw.on_all_workspaces) ...
 
